@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">We value your feedback! Please fill out this survey.</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <!-- Name Input -->
+            <label id="name-label" for="name">Name:</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+
+            <!-- Email Input -->
+            <label id="email-label" for="email">Email:</label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+
+            <!-- Number Input -->
+            <label id="number-label" for="number">Age:</label>
+            <input id="number" type="number" placeholder="Enter your age" min="18" max="100" required>
+
+            <!-- Dropdown -->
+            <label for="dropdown">Which option best describes you?</label>
+            <select id="dropdown" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="student">Student</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Radio Buttons -->
+            <fieldset>
+                <legend>How satisfied are you with our service?</legend>
+                <label><input type="radio" name="satisfaction" value="very-satisfied" required> Very Satisfied</label>
+                <label><input type="radio" name="satisfaction" value="satisfied"> Satisfied</label>
+                <label><input type="radio" name="satisfaction" value="neutral"> Neutral</label>
+                <label><input type="radio" name="satisfaction" value="dissatisfied"> Dissatisfied</label>
+            </fieldset>
+
+            <!-- Checkboxes -->
+            <fieldset>
+                <legend>What features do you use? (Select all that apply)</legend>
+                <label><input type="checkbox" name="features" value="feature1"> Feature 1</label>
+                <label><input type="checkbox" name="features" value="feature2"> Feature 2</label>
+                <label><input type="checkbox" name="features" value="feature3"> Feature 3</label>
+            </fieldset>
+
+            <!-- Textarea -->
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" placeholder="Enter your comments here"></textarea>
+
+            <!-- Submit Button -->
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
