@@ -7,10 +7,13 @@ pinMode (2, OUTPUT); // d
 pinMode (15, OUTPUT); // e
 pinMode (27, OUTPUT); // f
 pinMode (26, OUTPUT); // g
+
+//lane  
 pinMode(21, OUTPUT); // red
 pinMode(22, OUTPUT); // yellow
 pinMode(23, OUTPUT); // green
 
+//opposite lane
 pinMode(13, OUTPUT); // green 2
 pinMode(12, OUTPUT); // yellow 2
 pinMode(14, OUTPUT); // red 2
