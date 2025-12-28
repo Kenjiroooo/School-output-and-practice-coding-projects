@@ -1,5 +1,6 @@
 void setup ()
 {
+// 7 Segment traffic line timer
 pinMode (5, OUTPUT); // a
 pinMode (18, OUTPUT); //b
 pinMode (4, OUTPUT); //c
